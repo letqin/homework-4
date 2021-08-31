@@ -1,4 +1,14 @@
+var questions = [
+    {
+        question: "What are the similarities between Java and JavaScript?";
+        options: ""
+    },
+];
+
 // when I click the start button
+start.onclick = {
+    
+}
     // a timer starts
 
 // the first question is presented
