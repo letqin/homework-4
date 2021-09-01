@@ -6,11 +6,11 @@ var questions = [
         answer: "Nothing, don't be ridiculous."
     },
 
-    // {
-    //     question: 
-    //     options: 
-    //     answer: 
-    // },
+    {
+        question: "What is an array?",
+        options: ["A beam of light", "An arrangement of troops", "An indexed set of related elements", "A list of jurors"],
+        answer: "An indexed set of related elements",
+    },
 
     // {
     //     question: 
@@ -45,8 +45,8 @@ var questions = [
 
 // when I click the start button
 
-start.onclick = {
-    
+document.getElementById("startButton").addEventListener(click, function) {
+    console.log("hello there"),
 };
 
 // var t = d.getTime();
