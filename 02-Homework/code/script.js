@@ -1,4 +1,11 @@
 // when I click the start button
+var btn = document.createElement("button");
+btn.innerHTML = "click me";
+document.body.appendChild(btn);
+
+btn.addEventListener("click", function() {
+    
+});
     // a timer starts
 
 // the first question is presented
