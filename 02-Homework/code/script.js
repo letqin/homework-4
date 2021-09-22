@@ -56,16 +56,6 @@ var questions = [
     // },
 ];
 
-// when I click the start button
-
-// var button = document.getElementById("startButton").addEventListener(click, function(),) {
-//     console.log("hello there"),
-// };
-
-// var t = d.getTime();
-
-// a timer starts
-
 var myfunc = setInterval(function() {
     }, 1000)
     
