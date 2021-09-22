@@ -1,3 +1,9 @@
+console.log('working');
+
+var score = {
+
+};
+
 var questions = [
 
     {
@@ -7,7 +13,7 @@ var questions = [
     },
 
     {
-        question: "What is an array?",
+        question: "What is an array with regards to JavaScript?",
         options: ["A beam of light", "An arrangement of troops", "An indexed set of related elements", "A list of jurors"],
         answer: "An indexed set of related elements",
     },
