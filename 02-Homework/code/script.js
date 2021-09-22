@@ -1,6 +1,16 @@
 var score = {
 };
 
+let btn = document.createElement("button");
+
+btn.innerHTML = "Start";
+
+btn.onclick = function () {
+    console.log("contact");
+};
+
+document.body.appendChild(btn);
+
 var questions = [
 
     {
@@ -48,7 +58,7 @@ var questions = [
 
 // when I click the start button
 
-// document.getElementById("startButton").addEventListener(click, function) {
+// var button = document.getElementById("startButton").addEventListener(click, function(),) {
 //     console.log("hello there"),
 // };
 
@@ -57,7 +67,6 @@ var questions = [
 // a timer starts
 
 var myfunc = setInterval(function() {
-    // code goes here
     }, 1000)
     
 
@@ -75,6 +84,12 @@ var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
 var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
 var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
 var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+
+console.log(days);
+console.log(hours);
+console.log(minutes);
+console.log(seconds);
 
 if (timeleft < 0) {
     clearInterval(myfunc);
