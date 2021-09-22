@@ -1,7 +1,4 @@
-console.log('working');
-
 var score = {
-
 };
 
 var questions = [
@@ -51,21 +48,50 @@ var questions = [
 
 // when I click the start button
 
-document.getElementById("startButton").addEventListener(click, function) {
-    console.log("hello there"),
-};
+// document.getElementById("startButton").addEventListener(click, function) {
+//     console.log("hello there"),
+// };
 
 // var t = d.getTime();
 
 // a timer starts
 
-var minutes = 1000 * 60;
-var hours = minutes * 60;
-var days = hours * 24;
-var years = days * 365;
-var d = new Date();
+var myfunc = setInterval(function() {
+    // code goes here
+    }, 1000)
+    
 
-console.log(d);
+var countDownDate = new Date("Sep 25, 2021 16:37:52").getTime();
+
+console.log(countDownDate);
+
+var now = new Date().getTime();
+var timeleft = countDownDate - now;
+
+console.log(now);
+console.log(timeleft);
+
+var days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
+var hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+var minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
+
+if (timeleft < 0) {
+    clearInterval(myfunc);
+    document.getElementsByClassName("days").innerHTML = ""
+    document.getElementsByClassName("hours").innerHTML = "" 
+    document.getElementsByClassName("mins").innerHTML = ""
+    document.getElementsByClassName("secs").innerHTML = ""
+    document.getElementsByClassName("end").innerHTML = "Pencils Down";
+}
+
+// var minutes = 1000 * 60;
+// var hours = minutes * 60;
+// var days = hours * 24;
+// var years = days * 365;
+// var d = new Date();
+
+// console.log(d);
 
 // the first question is presented
     // if the answer is correct, a point is added to the player score
@@ -81,3 +107,9 @@ console.log(d);
 // asks for initials
 
 // saves initials and high score in local storage
+
+document.getElementsByClassName("days").innerHTML = days + "d "
+document.getElementsByClassName("hours").innerHTML = hours + "h " 
+document.getElementsByClassName("mins").innerHTML = minutes + "m " 
+document.getElementsByClassName("secs").innerHTML = seconds + "s"
+
