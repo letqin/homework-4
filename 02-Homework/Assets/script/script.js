@@ -1,11 +1,21 @@
 var score = {
 };
+var timeLeft = 5
 
 let btn = document.createElement("button");
 
 btn.innerHTML = "Start";
 
-btn.onclick = function () {
+btn.onclick = function (timer) {
+    var timer = setInterval(function() {
+        timeLeft --;
+    
+        if (timeLeft <= 0) {
+            clearInterval(timer);
+        };
+    
+        console.log(timeLeft);
+    }, 1000);
     console.log("contact");
 };
 
@@ -55,20 +65,6 @@ var questions = [
     //     answer: 
     // },
 ];
-
-var timeLeft = 5;
-
-var timer = setInterval(function() {
-    timeLeft --;
-
-    if (timeLeft <= 0) {
-        clearInterval(timer);
-    }
-
-    console.log(timeLeft);
-}, 1000)
-
-console.log (timeLeft);
 
 // the first question is presented
     // if the answer is correct, a point is added to the player score
