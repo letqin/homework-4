@@ -1,8 +1,12 @@
-var score = {
-};
-var timeLeft = 5
+var startButton = document.getElementById("start");
+var answers = document.getElementById("correct");
+var wrongAnswers = document.getElementById("incorrect")
+var timer = document.getElementById();
+var timeLeft = document.getElementById("");
+var = document.getElementById("");
+var = document.getElementById("");
 
-let btn = document.createElement("button");
+var timeLeft = 5
 
 btn.innerHTML = "Start";
 
@@ -18,8 +22,6 @@ btn.onclick = function (timer) {
     }, 1000);
     console.log("contact");
 };
-
-document.body.appendChild(btn);
 
 var questions = [
 
@@ -80,9 +82,3 @@ var questions = [
 // asks for initials
 
 // saves initials and high score in local storage
-
-document.getElementsByClassName("days").innerHTML = days + "d "
-document.getElementsByClassName("hours").innerHTML = hours + "h " 
-document.getElementsByClassName("mins").innerHTML = minutes + "m " 
-document.getElementsByClassName("secs").innerHTML = seconds + "s"
-
