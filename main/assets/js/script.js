@@ -27,6 +27,7 @@ function start() {
 
 function correct() {
     // add 100 points to score
+
     // display the next question
 };
 
@@ -35,3 +36,19 @@ function incorrect () {
     // subtract 100 points from score
     // display the next question
 };
+
+function startTimer() {
+    timer = setInterval(function() {
+        timerCount--;
+        timerElement.textContent = timerCount;
+        if (timerCount <= 0) {
+            if (timerCount === 0) {
+                // clears the timer
+                clearInterval(timer);
+                console.log(timer);
+                console.log(timerCount);
+            };
+        };
+    }, 1000);
+};
+
