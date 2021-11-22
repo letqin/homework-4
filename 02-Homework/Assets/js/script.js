@@ -14,9 +14,22 @@ function init() {
     getHighScore();
 };
 
-// starts the quiz when the 
+// starts the quiz when the user clicks the start button
+    // sets score to zero
+    // starts timer
 function start() {
     score = 0;
     timerCount = 30;
+    startButton.disabled = true;
     startTimer();
+};
+
+function correct() {
+    wordB
+    score++;
+
+};
+
+function incorrect () {
+
 };
