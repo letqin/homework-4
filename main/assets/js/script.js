@@ -1,7 +1,7 @@
 var win = document.querySelector(".win");
 var loss = document.querySelector(".loss");
-var timer = document.querySelector(".timer");
-var start = document.querySelector(".start");
+var timer = document.querySelector(".timer-count");
+var start = document.querySelector(".start-button");
 
 var correct = 0;
 var incorrect = 0;
@@ -27,8 +27,9 @@ function start() {
 
 function correct() {
     // add 100 points to score
-
+    score + 100
     // display the next question
+    
 };
 
 function incorrect () {
