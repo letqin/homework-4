@@ -1,7 +1,7 @@
 var win = document.querySelector(".win");
 var loss = document.querySelector(".loss");
 var timer = document.querySelector(".timer");
-var start = document.querySelector("start");
+var start = document.querySelector(".start");
 
 var correct = 0;
 var incorrect = 0;
@@ -15,21 +15,23 @@ function init() {
 };
 
 // starts the quiz when the user clicks the start button
-    // sets score to zero
-    // starts timer
 function start() {
+    // sets score to zero
     score = 0;
-    timerCount = 30;
+    timerCount = 60;
+    // disables the start button
     startButton.disabled = true;
+    // starts timer
     startTimer();
 };
 
 function correct() {
-    wordB
-    score++;
-
+    // add 100 points to score
+    // display the next question
 };
 
 function incorrect () {
-
+    // subtract 10 seconds
+    // subtract 100 points from score
+    // display the next question
 };
