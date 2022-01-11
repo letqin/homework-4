@@ -6,7 +6,7 @@ const start = document.querySelector(".start-button");
 let correct = 0;
 let incorrect = 0;
 let score = 0;
-let timer;
+let timer = 60;
 let timerCount;
 
 let questions = [
@@ -87,23 +87,23 @@ let questions = [
             "Never Achieve Nothing",  
         ],
 
-        answer: "",
+        answer: "Not A Number",
     },
 
     {
         question: `What is the "global scope"?`,
 
         options: [
-            "",
+            "The global time standard in JavaScript",
 
-            "",
+            "A function used to view what JavaScript is doing",
 
             "The James Webb Space Telescope",
 
             "Scope that contains all scopes and is visible in all scopes",  
         ],
 
-        answer: "",
+        answer: "Scope that contains all scopes and is visible in all scopes",
     },
 
     {
@@ -191,13 +191,13 @@ function correct() {
     // add 1 point to score
     score++
     // display the next question
-    
 };
 
 function incorrect () {
     // subtract 10 seconds
-    
+    let time = (time - 10)
     // subtract 1 point from score
+    score--
     // display the next question
 };
 
