@@ -15,14 +15,14 @@
               Code Quiz
             </h1>
             <div class="col-4 border border-success rounded">
-              Timer: <span class="timer-count">0:00</span>
+              Time Left: <span class="timer-count" id="timer-display">2:00</span>
             </div>
           </div>
     </header>
     <main>
         <div class="container">
             <div class="col-sm">
-                <button type="button" class="btn btn-primary start">
+                <button type="button" class="btn btn-primary start" id ="start">
                     Start
                 </button>
                 <div class="col-sm">
@@ -37,25 +37,25 @@
                 </div>
                 <div class="col">
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="a">
                         <label class="form-check-label">
                           A. <span class="a">Answer</span>
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="b">
                         <label class="form-check-label">
                           B. <span class="b">Answer</span>
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="c">
                         <label class="form-check-label">
                           C. <span class="c">Answer</span>
                         </label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="d">
                         <label class="form-check-label">
                           D. <span class="d">Answer</span>
                         </label>
@@ -64,7 +64,7 @@
             </div>
             <div class="row">
                 <div class="col-6"></div>
-                <button type="button" class="col-6 btn btn-secondary">Next</button>
+                <button type="button" class="col-6 btn btn-secondary" id="next-question">Next</button>
             </div>
         </div>
     </main>
