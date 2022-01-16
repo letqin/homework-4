@@ -10,7 +10,7 @@ let startQuiz = document.getElementById("start");
 // wins, losses, timer, and start button
 let win = document.querySelector(".win");
 let loss = document.querySelector(".loss");
-let timer = document.querySelector(".timer-count");
+let timerElement = document.querySelector(".timer-count");
 const start = document.querySelector(".start-button");
 
 // variables for running the quiz
@@ -21,6 +21,9 @@ let incorrect = 0;
 let score = 0;
 let timer = 60;
 let timerCount;
+
+let scoreBoard = [];
+let LocalStorage = localStorage;
 
 // question array
 let questions = [
@@ -257,4 +260,7 @@ function incorrect () {
     // display the next question
 };
 
-
+let showScoreBoard = () => {
+    scoreSubmission.classList.remove("is-hidden");
+    
+}
